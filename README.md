@@ -13,15 +13,15 @@ Opens at `http://localhost:5173`. For a production build: `npm run build && npm 
 
 ## Design decisions
 
-**Document-first layout** — The SOW is presented as a paper-style card on a neutral background. The goal was to make it feel like reading a real proposal rather than navigating a web app. Clients shouldn't have to learn a new tool just to review a document.
+**Document-first layout**: The SOW is presented as a paper-style card on a neutral background. The goal was to make it feel like reading a real proposal rather than navigating a web app. Clients shouldn't have to learn a new tool just to review a document.
 
-**Section-level commenting** — Comments are tied to individual sections instead of being dumped into one big thread. This keeps discussions focused and makes it obvious which part of the scope someone is talking about.
+**Section-level commenting**: Comments are tied to individual sections instead of being dumped into one big thread. This keeps discussions focused and makes it obvious which part of the scope someone is talking about.
 
-**Slide-in panel** — The comment panel opens from the right so the document stays visible. You can reference the section content while writing your feedback without switching contexts.
+**Slide-in panel**: The comment panel opens from the right so the document stays visible. You can reference the section content while writing your feedback without switching contexts.
 
-**No backend (yet)** — Comments live in reactive state and reset on reload. For the current use case of reviewing a single document in a session, this keeps things simple. Persistence would be the obvious next step.
+**No backend (yet)**: Comments live in reactive state and reset on reload. For the current use case of reviewing a single document in a session, this keeps things simple. Persistence would be the obvious next step.
 
-**Tailwind + Vue Composition API** — Tailwind v4 for quick, consistent styling without a separate design system. Vue's `<script setup>` and a single `useComments` composable keep things lightweight — no need for Pinia or Vuex at this scale.
+**Tailwind + Vue Composition API**: Tailwind v4 for quick, consistent styling without a separate design system. Vue's `<script setup>` and a single `useComments` composable keep things lightweight — no need for Pinia or Vuex at this scale.
 
 ## Assumptions
 
