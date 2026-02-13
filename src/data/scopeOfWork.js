@@ -91,18 +91,4 @@ export const sections = [
     total: '£45,000',
     note: 'Payment terms are net 14 days from invoice date. This investment covers all design, development, testing, and deployment. Hosting and third-party service costs are not included.',
   },
-  {
-    id: 'assumptions',
-    title: 'Assumptions & Dependencies',
-    type: 'list',
-    content: "This scope and timeline are based on the following assumptions. If any of these change, we'll discuss the impact on timeline and budget together:",
-    items: [
-      'Brand assets and content will be provided within the first week of the project',
-      'Feedback on deliverables will be provided within 3 business days of each review',
-      'API documentation for existing systems (Xero, 3PL providers) will be available by Week 4',
-      'A dedicated point of contact from Meridian will be available for weekly sync calls',
-      'Hosting infrastructure and third-party service costs are separate from this engagement',
-      'The scope covers desktop and tablet interfaces; native mobile apps are not included',
-    ],
-  },
 ]
