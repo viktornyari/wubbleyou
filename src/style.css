@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+[id^="section-"] {
+  scroll-margin-top: 6rem;
+}
+
+.comment-panel-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.comment-panel-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.comment-panel-scroll::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  border-radius: 3px;
+}
+
+.comment-panel-scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #9ca3af;
+}
+
+.panel-enter-active,
+.panel-leave-active {
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.panel-enter-from,
+.panel-leave-to {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
